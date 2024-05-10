@@ -1,0 +1,74 @@
+.details-header {
+    background-color: #0080F8;
+    font-size: 20px;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 10;
+    padding-right: 50%;
+    padding-left: 50%;
+    text-align: center;
+    width: max-content;
+    margin-top: 50px;
+}
+
+.details-title,
+
+.details-container h2 {
+    color: #0080F8;
+    font-size: 30px;
+    font-weight: bold;
+}
+.details-container p{
+    color: black;
+}
+.details-container {
+    width: 75%;
+    margin: 20px auto;
+    /* border:#0080F8 10px dashed; */
+}
+
+.details-container pre,
+.details-container p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.details-container label {
+    font-weight: bold;
+    color: #0080F8;
+}
+
+.details-container input[type="text"],
+.details-container input[type="email"],
+.details-container textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.details-container button {
+    background-color: #0080F8;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid #0080F8;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.details-container #response {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f3f3f3;
+}
+
+.details-container img.details-image {
+    height: auto;
+    max-width: 100%;
+}
+
+.details-container hr {
+    border: none;
+    border-top: 1px solid #5f5f5f;
+    margin: 30px 0;
+}

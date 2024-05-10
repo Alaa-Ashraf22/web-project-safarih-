@@ -1,0 +1,121 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+h1 {
+    margin: 100px 20px 40px 20px;
+    color: black;
+
+  }
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    top: -1000;
+    text-align: left;
+  }
+.cards .cairo {
+    background: linear-gradient(
+        45deg,
+        rgb(16, 137, 211) 0%,
+        rgb(18, 177, 209) 100%
+      );
+  }
+.cards .alex {
+    background: linear-gradient(
+      45deg,
+      rgb(16, 137, 211) 0%,
+      rgb(18, 177, 209) 100%
+    );
+  }
+.cards .dahab {
+    background: linear-gradient(
+        45deg,
+        rgb(16, 137, 211) 0%,
+        rgb(18, 177, 209) 100%
+      );
+  }
+.cards .sohag {
+    background: linear-gradient(
+        45deg,
+        rgb(16, 137, 211) 0%,
+        rgb(18, 177, 209) 100%
+      );
+  }
+.cards .marsamat {
+    background: linear-gradient(
+      45deg,
+      rgb(16, 137, 211) 0%,
+      rgb(18, 177, 209) 100%
+    );
+  }  
+.cards .hur {
+    background: linear-gradient(
+      45deg,
+      rgb(16, 137, 211) 0%,
+      rgb(18, 177, 209) 100%
+    );
+  }
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 400px;
+    width: 1000px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+.cards .card p.tip {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 50px 600px 30px 50px;
+  }
+.cards .card p.second-text {
+    font-size: 1em;
+    margin: 0px 600px 0px 70px;
+  }
+.cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+  }
+.money {
+    font-style: italic;
+    font-family: cursive;
+    margin: 100px 600px 40px 95px;
+  }
+.but2 {
+    font-family: monospace;
+    background-color: #f3f7fe;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 45px;
+    transition: .3s;
+    margin: 30px 50px;
+  }
+.but2:hover {
+    background-color: #070708;
+    box-shadow: 0 0 0 5px #30343a5f;
+    color: #fff;
+  }
+
+ .im2{
+  width: 55%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-bottom: -257px;
+    margin-top: -135px;
+    border-radius: 10px;
+}
