@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Reservation</title>
+    <link rel="stylesheet" href="revervation.css">
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="icon" href="سسس.png" type="image/x-icon">
+    <style>
+        .footer {
+  background-color: #24262b;
+  min-width: 100%;
+  position:absolute;
+  margin-left: -10px;
+  margin-bottom: -500px;
+  bottom: 0;
+  max-height:1000px;
+  margin-bottom : -560px
+  }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="home.html"><img src="سسس.png" alt="Logo"></a></div>
+
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><button><a href="login.html">Login</a></button></li>
+            <li><button><a href="signup.html">SignUp</a></button></li>
+        </ul>
+    </nav>
+<section>
+       <div class="container1">
+                <div class="heading"><h5>Book Your Ticket | SAFARIA <img class="img1" src="WhatsApp Image 2024-05-12 at 7.14.54 AM.jpeg" alt="just logo"></h5>
+                    <hr></div>
+                <form class="form" target="_blank" method="post">
+                   <label>traveling from...</label>
+                    <br>
+                    <input type="text" id="searchInput" list="locations" name="plc" required placeholder="from">
+                       <datalist id="locations">
+                           <option value="sohag">
+                           <option value="marsa matruh">
+                           <option value="hurghada">
+                           <option value="Alexandria">
+                           <option value="dahab">
+                           <option value="cairo">
+                       </datalist>
+                <br>
+                     <label>traveling to...</label>
+                    <br>
+                    <input type="text" id="search" list="place2" required name="plc2" placeholder="to">
+                    <datalist id="place2">
+                            <option value="sohag">
+                            <option value="marsa matruh">
+                            <option value="hurghada">
+                            <option value="alexandria">
+                            <option value="dahab">
+                            <option value="cairo">
+                    </datalist>
+                    <br>
+                    <label>travel date</label>
+                    <br>
+                    <input class="d1" type="date" required name="date" id="2" placeholder="choose">
+                    <br>
+                    <label>number trevalers</label>
+                    <br>
+                        <input type="number" name="number" class="number" required max="7" min="1" placeholder="mixmium 7">
+                    <br>
+                  <input value="Reset" type="reset" class="b1-button" />
+                  <button class="b2-button" onclick="openPage()">Search</button>
+                </form>
+                <br>
+</section>
+<footer class="footer">
+   
+    <div class="container">
+     
+
+        <div class="row">
+            <div class="logo"><a href="home.html"><img src="سسس.png" alt="Logo"></a></div>
+  
+            <div class="footer-col">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li><br>
+                    <li><a href="login.html">Login</a></li><br>
+                    <li><a href="trips.html">Trips</a></li><br>
+                    
+                    <li><a href="reservation.html">Booking</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>about</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li><br>
+                    
+                    <li><a href="contact us.html">Contact Us</a></li><br>
+                    <li><a href="details.html">Details</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>contact</h4>
+                <ul>
+                    <li><p>sohag</p></li><br>
+                    <li><p>safarih@gmail.com</p></li><br>
+                    <li><p>(+645)895 467</p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><img src="facebook (1).png" alt="Facebook"></a>
+                    <a href="#"><img src="instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div class="copyright">
+        <p>&copy; Copyright safarih 2024 • All Rights Reserved</p>
+    </div>
+</footer>
+<script>
+    function openPage() {
+        const searchValue = document.getElementById("searchInput").value.toLowerCase();
+        let pageLink;
+
+        switch (searchValue) {
+            case "sohag":
+                pageLink = "sohag.html";
+                break;
+            case "marsa matruh":
+                pageLink = "MrsaMad.html";
+                break;
+            case "hurghada":
+                pageLink = "hur.html";
+                break;
+            case "alexandria":
+                pageLink = "alex.html";
+                break;
+            case "dahab":
+                pageLink = "dahab.html";
+                break;
+            case "cairo":
+                pageLink = "cairo.html";
+                break;
+            default:
+                alert("Location not found!");
+                return;
+        }
+
+        window.open(pageLink, "_blank");
+}
+</script>
+</body>
+</html>
